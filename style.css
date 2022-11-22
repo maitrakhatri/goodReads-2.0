@@ -22,6 +22,16 @@ body {
     color: var(--brown);
 }
 
+button {
+    outline: none;
+    border: none;
+    background-color: var(--green);
+    color: var(--bg-light);
+    padding: 0.5rem 1rem;
+    border-radius: .15rem;
+    cursor: pointer;
+}
+
 .title {
     font-size: 1.5rem;
 }
@@ -30,6 +40,20 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.space-evenly {
+    justify-content: space-evenly;
+}
+
+.justify-start {
+    justify-content: flex-start;
 }
 
 .wrap {
@@ -41,14 +65,8 @@ body {
 }
 
 /* ---------------------------- NAVIGATION BAR --------------------------------- */
-.nav-icons, .input {
+.nav-icons, nav .input {
     display: none;
-}
-
-@media only screen and (min-width: 1200px) {
-    .nav-icons, .input {
-        display: flex;
-    }
 }
 
 .nav-links a {
@@ -80,7 +98,7 @@ body {
 }
 
 .input {
-    padding: 0rem 1rem;
+    padding-bottom: 1rem;
     border-bottom: 2px solid var(--brown);
 }
 
@@ -117,4 +135,71 @@ body {
 .hover-underline-animation:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
+}
+
+/* ------------------------------------ MAIN ------------------------------------ */
+#Main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+/* --------------------------- LEFT SIDEBAR ---------------------------- */
+
+.left {
+    display: none;
+}
+
+.left section {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--brown-less-opacity);
+}
+
+.left, .right {
+    width: 90%;
+    font-size: small;
+}
+
+.left p, .right p {
+    margin: 0rem;
+    padding: 0.25rem;
+}
+
+.icon-large {
+    width: 1rem;
+}
+
+.left .links a {
+    text-decoration: none;
+    color: var(--links-green);
+    font-size: small;
+}
+
+.set-target input {
+    width: 2.5rem;
+    padding: 0.25rem 0rem;
+    outline: none;
+}
+
+.set-target {
+    gap: 0rem;
+}
+
+#Main .input {
+    padding: 0rem;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 1200px) {
+    .nav-icons, nav .input {
+        display: flex;
+    }
+
+    .left {
+        display: flex;
+    }
 }
