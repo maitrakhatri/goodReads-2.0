@@ -27,6 +27,7 @@
                 <a class="hover-underline-animation" href="#">Browse</a>
                 <a class="hover-underline-animation" href="#">Community</a>
             </div>
+            <i id="menu" class="fa-2x fa-solid fa-bars"></i>
             <div class="input flex-row-center">
                 <input class="input" type="text" placeholder="Search books">
                 <i class="fa-solid fa-magnifying-glass icon"></i>
@@ -39,6 +40,22 @@
                 <img class="profile" src="https://i.pravatar.cc/300" alt="Profile">
             </div>
         </nav>
+
+        <div class="hamburger-menu-container">
+            <div id="hamburger-menu" class="flex-col gap-2 hide">
+                <div class="nav-icons flex-row-center">
+                    <i class="icon fa-solid fa-bell"></i>
+                    <i class="icon fa-solid fa-comments"></i>
+                    <i class="icon fa-solid fa-envelope"></i>
+                    <i class="icon fa-solid fa-user-group"></i>
+                    <img class="profile" src="https://i.pravatar.cc/300" alt="Profile">
+                </div>
+                <div class="input flex-row-center">
+                    <input class="input" type="text" placeholder="Search books">
+                    <i class="fa-solid fa-magnifying-glass icon"></i>
+                </div>
+            </div>
+        </div>
 
         <div id="Main">
             <aside class="left flex-col">
@@ -528,5 +545,13 @@
         </div>
     </footer>
 </body>
+<script>
+    const menuButton = document.querySelector("#menu")
+    const hamburgerMenu = document.querySelector("#hamburger-menu")
+
+    menuButton.addEventListener("click", () => {
+        hamburgerMenu.classList.toggle("hide")
+    })
+</script>
 
 </html>
