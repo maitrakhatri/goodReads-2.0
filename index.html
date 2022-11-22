@@ -13,7 +13,9 @@
 
 <body>
     <div id="banner">
-        <p><i class="fa-solid fa-trophy"></i><b>&nbsp&nbsp&nbsp&nbsp The Goodreads Choice Awards Opening Round </b> <small>&nbsp&nbsp&nbsp&nbsp Vote for year's best books </small> <i class="fa-solid fa-chevron-right"></i></p>
+        <p><i class="fa-solid fa-trophy"></i><b>&nbsp&nbsp&nbsp&nbsp The Goodreads Choice Awards Opening Round </b>
+            <small>&nbsp&nbsp&nbsp&nbsp Vote for year's best books </small> <i class="fa-solid fa-chevron-right"></i>
+        </p>
     </div>
 
     <div class="body">
@@ -26,7 +28,7 @@
                 <a class="hover-underline-animation" href="#">Community</a>
             </div>
             <div class="input flex-row-center">
-                <input type="text" placeholder="Search books">
+                <input class="input" type="text" placeholder="Search books">
                 <i class="fa-solid fa-magnifying-glass icon"></i>
             </div>
             <div class="nav-icons flex-row-center gap-1">
@@ -44,12 +46,12 @@
                     <div class="currently-reading flex-col">
                         <p><b>CURRENTLY READING</b></p>
                         <div class="question flex-row-center space-evenly">
-                            <i class="fa-solid fa-book fa-4x icon-large"></i>
+                            <i class="fa-solid fa-book fa-3x icon-large"></i>
                             <p>What are you reading ?</p>
                         </div>
                     </div>
                     <div class="input flex-row-center">
-                        <input type="text" placeholder="Search books">
+                        <input class="input" type="text" placeholder="Search books">
                         <i class="fa-solid fa-magnifying-glass icon"></i>
                     </div>
                     <div class="links">
@@ -66,7 +68,7 @@
                         <p><b>2022 READING CHALLENGE</b></p>
                     </div>
                     <p>Challenge yourself to read more this year!!</p>
-                    <div class="reading-challenge-input flex-row-center space-evenly">
+                    <div class="reading-challenge-input flex-row-center space-evenly wrap">
                         <div class="image">
                             <i class="fa-solid fa-book-open fa-5x"></i>
                         </div>
@@ -83,8 +85,8 @@
                 <section class="flex-col  gap-1">
                     <div class="currently-reading flex-col">
                         <p><b>WANT TO READ</b></p>
-                        <div class="want-to-read flex-row-center space-evenly">
-                            <i class="fa-solid fa-book fa-4x icon-large"></i>
+                        <div class="want-to-read flex-row-center wrap">
+                            <i class="fa-solid fa-book fa-3x icon-large"></i>
                             <p>What do you want to read next ?</p>
                         </div>
                     </div>
@@ -103,12 +105,282 @@
                         <a href="#"> 10 - Want to Read</a>
                         <a href="#"> 02 - Currently Reading</a>
                         <a href="#"> 38 - Read</a>
-                        <a href="#"> 10 - Want to Read</a>
                     </div>
                 </section>
             </aside>
 
-            <main class="timeline flex-col">
+            <main class="timeline flex-col gap-2">
+                <section class="timeline-awards flex-col gap-0">
+                    <img src="https://images.gr-assets.com/misc/1667324527-1667324527_goodreads_misc.png"
+                        alt="Awards banner">
+                    <div class="award-banner-text flex-col">
+                        <div class="title">
+                            <a href="#">It's Time for the Goodreads Choice Awards</a>
+                        </div>
+                        <div class="description">
+                            <p>Pick the best books of the year across 17 categories! Opening round: Nov. 15th to Nov.
+                                27th</p>
+                            <small>2,269,420 Votes</small>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="updates flex-row-center">
+                    <p><b>UPDATES</b></p>
+                    <div class="customize flex-row-center gap-1">
+                        <i class="fa-solid fa-gear"></i>
+                        <p>Customize</p>
+                    </div>
+                </div>
+
+                <section class="friend-update">
+                    <div class="update-block flex-col">
+                        <div class="update-title flex-row-center justify-start gap-1">
+                            <img class="profile" src="https://i.pravatar.cc/300" alt="Profile">
+                            <p><b>Maitra Khatri</b> has made progress on <b>A Game of Thrones</b></p>
+                        </div>
+                        <div class="progressbar flex-row-center justify-start gap-1">
+                            <div class="outerbar">
+                                <div class="innerbar"></div>
+                            </div>
+                            <small>On page 129 of 987</small>
+                        </div>
+                        <div class="book-card flex-row-center justify-start gap-2">
+                            <img class="book-cover"
+                                src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1601814319l/822993.jpg"
+                                alt="A Game of Thrones Cover">
+                            <div class="book-card-description flex-col gap-0">
+                                <p class="book-title">
+                                    <b>A Game of Thrones</b>
+                                </p>
+                                <small>by George R.R. Martin</small>
+                                <div class="want-to-read flex-row-center">
+                                    <select name="want-to-read" id="want-to-read">
+                                        <option value="Want to Read">Want to Read</option>
+                                        <option value="Currently Reading">Currently Reading</option>
+                                        <option value="Read">Read</option>
+                                    </select>
+                                    <span> <small> Rate it: <i class="fa-regular fa-star"></i><i
+                                                class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
+                                                class="fa-regular fa-star"></i><i
+                                                class="fa-regular fa-star"></i></small></span>
+                                </div>
+                                <div class="book-card-description">
+                                    <small>Summers span decades. Winter can last a lifetime. And the struggle for the
+                                        Iron Throne has begun.As Warden of the North, Lord Eddard Stark counts it a
+                                        curse ....<a href="#">More</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="actions flex-row-center justify-start align-center gap-1">
+                            <a href="#">Like</a> <a href="#">Preview Book</a>
+                        </div>
+                        <div class="comment flex-row-center justify-start gap-1">
+                            <img class="profile" src="https://i.pravatar.cc/300" alt="Profile">
+                            <input class="input" type="text" name="comment" id="comment"
+                                placeholder="Write a comment...">
+                        </div>
+                    </div>
+                </section>
+
+                <section class="friend-update">
+                    <div class="update-block flex-col">
+                        <div class="update-title flex-row-center justify-start gap-1">
+                            <img class="profile" src="https://i.pravatar.cc/300" alt="Profile">
+                            <p><b>Maitra Khatri</b> reviewed <b>The Inheritance Games</b></p>
+                        </div>
+                        <div class="rating flex-row-center justify-start">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <small>&nbsp&nbsp4.05 &nbsp&nbsp <a href="#">Read Maitra's Review</a></small>
+                        </div>
+                        <div class="review">
+                            <small>The very first thing that I noticed was the narration, the entire book is from the
+                                POV of the Mystery Girl, Avery Grambs. We don’t have the Author or a Third Person
+                                narrating the story, we get into and move ahead into the story with Avery. We know all
+                                her thoughts and information that only and only she knows... <a
+                                    href="#">More</a></small>
+                        </div>
+                        <div class="book-card flex-row-center justify-start gap-2">
+                            <img class="book-cover"
+                                src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1593805436l/53063341.jpg"
+                                alt="The Inheritance Games Cover">
+                            <div class="book-card-description flex-col gap-0">
+                                <p class="book-title">
+                                    <b>The Inheritance Games </b>
+                                </p>
+                                <small>by Jennifer Lynn Barnes</small>
+                                <div class="want-to-read flex-row-center">
+                                    <select name="want-to-read" id="want-to-read">
+                                        <option value="Want to Read">Want to Read</option>
+                                        <option value="Currently Reading">Currently Reading</option>
+                                        <option value="Read">Read</option>
+                                    </select>
+                                    <span> <small> Rate it: <i class="fa-regular fa-star"></i><i
+                                                class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
+                                                class="fa-regular fa-star"></i><i
+                                                class="fa-regular fa-star"></i></small></span>
+                                </div>
+                                <div class="book-card-description">
+                                    <small>Avery has a plan: keep her head down, work hard for a better future. Then an
+                                        eccentric billionaire dies, leaving her almost his entire fortune. And no one,
+                                        least of all Avery, knows why.They had everything... <a href="#">More</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="actions flex-row-center justify-start align-center gap-1">
+                            <a href="#">Like</a> <a href="#">Preview Book</a>
+                        </div>
+                        <div class="comment flex-row-center justify-start gap-1">
+                            <img class="profile" src="https://i.pravatar.cc/300" alt="Profile">
+                            <input class="input" type="text" name="comment" id="comment"
+                                placeholder="Write a comment...">
+                        </div>
+                    </div>
+                </section>
+
+                <section class="friend-update">
+                    <div class="update-block flex-col">
+                        <div class="update-title flex-row-center justify-start gap-1">
+                            <img class="profile" src="https://i.pravatar.cc/300" alt="Profile">
+                            <p><b>Maitra Khatri</b> wants to read</p>
+                        </div>
+                        <div class="book-card flex-row-center justify-start gap-2">
+                            <img class="book-cover"
+                                src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1610493390l/50531218._SY475_.jpg"
+                                alt="The Hawthrone Leagacy Cover">
+                            <div class="book-card-description flex-col gap-0">
+                                <p class="book-title">
+                                    <b>The Hawthrone Legacy </b>
+                                </p>
+                                <small>by Jennifer Lynn Barnes</small>
+                                <div class="want-to-read flex-row-center">
+                                    <select name="want-to-read" id="want-to-read">
+                                        <option value="Want to Read">Want to Read</option>
+                                        <option value="Currently Reading">Currently Reading</option>
+                                        <option value="Read">Read</option>
+                                    </select>
+                                    <span> <small> Rate it: <i class="fa-regular fa-star"></i><i
+                                                class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
+                                                class="fa-regular fa-star"></i><i
+                                                class="fa-regular fa-star"></i></small></span>
+                                </div>
+                                <div class="book-card-description">
+                                    <small>The Inheritance Games ended with a bombshell, and now heiress Avery Grambs
+                                        has to pick up the pieces and find the man who might hold the answers to all of
+                                        her questions....<a href="#">More</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="actions flex-row-center justify-start align-center gap-1">
+                            <a href="#">Like</a> <a href="#">Preview Book</a>
+                        </div>
+                        <div class="comment flex-row-center justify-start gap-1">
+                            <img class="profile" src="https://i.pravatar.cc/300" alt="Profile">
+                            <input class="input" type="text" name="comment" id="comment"
+                                placeholder="Write a comment...">
+                        </div>
+                    </div>
+                </section>
+
+                <section class="friend-update">
+                    <div class="update-block flex-col">
+                        <div class="update-title flex-row-center justify-start gap-1">
+                            <img class="profile" src="https://i.pravatar.cc/300" alt="Profile">
+                            <p><b>Prithvi</b> is reading</p>
+                        </div>
+                        <div class="book-card flex-row-center justify-start gap-2">
+                            <img class="book-cover"
+                                src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1662120606l/62221614._SY475_.jpg"
+                                alt="Samsara Cover">
+                            <div class="book-card-description flex-col gap-0">
+                                <p class="book-title">
+                                    <b>Samsara: Enter the Valley of the Gods </b>
+                                </p>
+                                <small>by Saksham Garg</small>
+                                <div class="want-to-read flex-row-center">
+                                    <select name="want-to-read" id="want-to-read">
+                                        <option value="Want to Read">Want to Read</option>
+                                        <option value="Currently Reading">Currently Reading</option>
+                                        <option value="Read">Read</option>
+                                    </select>
+                                    <span> <small> Rate it: <i class="fa-regular fa-star"></i><i
+                                                class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
+                                                class="fa-regular fa-star"></i><i
+                                                class="fa-regular fa-star"></i></small></span>
+                                </div>
+                                <div class="book-card-description">
+                                    <small>Phones stop working. Smartwatches die out. Arms start glowing with blue
+                                        scars.And training begins the very next day for Aman Chandra and ten other Souls
+                                        of Samsara, who are ....<a href="#">More</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="actions flex-row-center justify-start align-center gap-1">
+                            <a href="#">Like</a> <a href="#">Preview Book</a>
+                        </div>
+                        <div class="comment flex-row-center justify-start gap-1">
+                            <img class="profile" src="https://i.pravatar.cc/300" alt="Profile">
+                            <input class="input" type="text" name="comment" id="comment"
+                                placeholder="Write a comment...">
+                        </div>
+                    </div>
+                </section>
+
+                <section class="friend-update">
+                    <div class="update-block flex-col">
+                        <div class="update-title flex-row-center justify-start gap-1">
+                            <img class="profile" src="https://i.pravatar.cc/300" alt="Profile">
+                            <p><b>Latika</b> rated a book <span> <small> <i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></small></span>
+                            </p>
+                        </div>
+                        <div class="book-card flex-row-center justify-start gap-2">
+                            <img class="book-cover"
+                                src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1664896750l/61924161._SY475_.jpg"
+                                alt="The Hidden Hindu 2 Cover">
+                            <div class="book-card-description flex-col gap-0">
+                                <p class="book-title">
+                                    <b>The Hidden Hindu 2</b>
+                                </p>
+                                <small>by Akshat Gupta</small>
+                                <div class="want-to-read flex-row-center">
+                                    <select name="want-to-read" id="want-to-read">
+                                        <option value="Want to Read">Want to Read</option>
+                                        <option value="Currently Reading">Currently Reading</option>
+                                        <option value="Read">Read</option>
+                                    </select>
+                                    <span> <small> Rate it: <i class="fa-regular fa-star"></i><i
+                                                class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
+                                                class="fa-regular fa-star"></i><i
+                                                class="fa-regular fa-star"></i></small></span>
+                                </div>
+                                <div class="book-card-description">
+                                    <small>The first battle is lost. The book of Mritsanjeevani is in the wrong hands
+                                        but Nagendra's plans are not limited only to immortality. What seemed to be the
+                                        end of all wars was just the beginning of an....<a href="#">More</a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="actions flex-row-center justify-start align-center gap-1">
+                            <a href="#">Like</a> <a href="#">Preview Book</a>
+                        </div>
+                        <div class="comment flex-row-center justify-start gap-1">
+                            <img class="profile" src="https://i.pravatar.cc/300" alt="Profile">
+                            <input class="input" type="text" name="comment" id="comment"
+                                placeholder="Write a comment...">
+                        </div>
+                    </div>
+                </section>
             </main>
 
             <aside class="right flex-col">
@@ -139,13 +411,13 @@
                                 <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1643265993l/60222681._SY475_.jpg"
                                     alt="The Hidden Hindu">
                             </div>
-                            <div class="details flex-col">
+                            <div class="details flex-col gap-0">
                                 <p><b>The Hidden Hindu</b></p>
                                 <small>by Akshat Gupta</small>
                                 <div class="rating flex-row-center">
                                     <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
                                         class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                        class="fa-regular fa-star"></i> <small>4.05</small>
+                                        class="fa-regular fa-star"></i> <small> &nbsp 4.05</small>
                                 </div>
                                 <button> Want to Read</button>
                             </div>
