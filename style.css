@@ -13,11 +13,14 @@
     --green-dark: #333E30;
 }
 
-html {
+html, body {
     font-family: 'Open Sans', sans-serif;
+    padding: 0rem;
+    margin: 0rem;
 }
 
-body {
+.body {
+    padding: 0;
     margin: 1rem 5rem;
     color: var(--brown);
 }
@@ -263,6 +266,20 @@ a.blog {
 .social-media.nav-icons i{
     width: 50px;
     height: 50px;
+}
+
+/* --------------------------- RIGHT SIDEBAR ---------------------------- */
+#banner {
+    text-align: center;
+    background-color: var(--links-green);
+    color: var(--yellow);
+    padding: 1rem;
+    margin: 0;
+}
+
+#banner * {
+    padding: 0;
+    margin: 0;
 }
 
 /* MEDIA QUERIES */

@@ -12,199 +12,210 @@
 </head>
 
 <body>
-
-    <nav class="flex-row-center wrap">
-        <p class="title">good<b>Reads 2.0</b></p>
-        <div class="nav-links flex-row-center gap-1">
-            <a class="hover-underline-animation" href="#">Home</a>
-            <a class="hover-underline-animation" href="#">My Books</a>
-            <a class="hover-underline-animation" href="#">Browse</a>
-            <a class="hover-underline-animation" href="#">Community</a>
-        </div>
-        <div class="input flex-row-center">
-            <input type="text" placeholder="Search books">
-            <i class="fa-solid fa-magnifying-glass icon"></i>
-        </div>
-        <div class="nav-icons flex-row-center gap-1">
-            <i class="icon fa-solid fa-bell"></i>
-            <i class="icon fa-solid fa-comments"></i>
-            <i class="icon fa-solid fa-envelope"></i>
-            <i class="icon fa-solid fa-user-group"></i>
-            <img class="profile" src="https://i.pravatar.cc/300" alt="Profile">
-        </div>
-    </nav>
-
-    <div id="Main">
-        <aside class="left flex-col">
-            <section class="flex-col">
-                <div class="currently-reading flex-col">
-                    <p><b>CURRENTLY READING</b></p>
-                    <div class="question flex-row-center space-evenly">
-                        <i class="fa-solid fa-book fa-4x icon-large"></i>
-                        <p>What are you reading ?</p>
-                    </div>
-                </div>
-                <div class="input flex-row-center">
-                    <input type="text" placeholder="Search books">
-                    <i class="fa-solid fa-magnifying-glass icon"></i>
-                </div>
-                <div class="links">
-                    <span>
-                        <a href="#">Recommendations</a>
-                        <span>|</span>
-                        <a href="#">General Update</a>
-                    </span>
-                </div>
-            </section>
-
-            <section class="flex-col">
-                <div class="reading-challenge">
-                    <p><b>2022 READING CHALLENGE</b></p>
-                </div>
-                <p>Challenge yourself to read more this year!!</p>
-                <div class="reading-challenge-input flex-row-center space-evenly">
-                    <div class="image">
-                        <i class="fa-solid fa-book-open fa-5x"></i>
-                    </div>
-                    <div class="set-target flex-col">
-                        <p>I want to read</p>
-                        <input type="number" name="target" id="target">
-                        <p>books in 2022</p>
-                        <button>Start Challenge</button>
-                    </div>
-                </div>
-                <small>You can change your goal at any time</small>
-            </section>
-
-            <section class="flex-col">
-                <div class="currently-reading flex-col">
-                    <p><b>WANT TO READ</b></p>
-                    <div class="want-to-read flex-row-center space-evenly">
-                        <i class="fa-solid fa-book fa-4x icon-large"></i>
-                        <p>What do you want to read next ?</p>
-                    </div>
-                </div>
-                <div class="links">
-                    <span>
-                        <a href="#">Recommendations</a>
-                    </span>
-                </div>
-            </section>
-
-            <section class="flex-col bookshelves">
-                <div class=" flex-col">
-                    <p><b>BOOKSHELVES</b></p>
-                </div>
-                <div class="links flex-col justify-start">
-                    <a href="#"> 10 - Want to Read</a>
-                    <a href="#"> 02 - Currently Reading</a>
-                    <a href="#"> 38 - Read</a>
-                    <a href="#"> 10 - Want to Read</a>
-                </div>
-            </section>
-        </aside>
-
-        <main class="timeline flex-col">
-        </main>
-
-        <aside class="right flex-col">
-            <section class="flex-col">
-                <div class="ad">
-                </div>
-            </section>
-
-            <section class="flex-col">
-                <p><b>GOODREADS CHOICE AWARDS</b></p>
-                <div class="award flex-col">
-                    <img src="https://s.gr-assets.com/assets/award/2022/choice-logo-home-module-medium-d9fe12afd4cbf7143fd89c205a8694e4.png"
-                        alt="poster">
-                    <div class="text flex-col">
-                        <p class="award-title"><b>Decide the Best Books of 2022</b></p>
-                        <button class="vote">Cast your Vote</button>
-                        <p>2,269,420 Votes Cast</p>
-                    </div>
-                </div>
-            </section>
-
-            <section class="flex-col">
-                <div class="recommendations flex-col">
-                    <p><b>RECOMMENDATIONS</b></p>
-                    <p>Because you enjoyed <b>The Oath of the Vayuputras (Shiva Trilogy #3)</b>:</p>
-                    <div class="book flex-row-center space-evenly">
-                        <div class="cover">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1643265993l/60222681._SY475_.jpg" alt="The Hidden Hindu">
-                        </div>
-                        <div class="details flex-col">
-                            <p><b>The Hidden Hindu</b></p>
-                            <small>by Akshat Gupta</small>
-                            <div class="rating flex-row-center">
-                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i> <small>4.05</small>
-                            </div>
-                            <button> Want to Read</button>
-                        </div>
-                    </div>
-                    <div class="description">
-                        <p>About the book: Prithvi, a twenty-one-year-old, is searching for a mysterious middle-aged aghori (Shiva devotee), Om Shastri, who was traced more than 200 years ago before he was captured and... <span><a href="#">Continue reading</a></span></p>
-                    </div>
-                    <a href="#">View all books similar to The Oath of the Vayuputras (Shiva Trilogy #3) </a>
-                </div>
-            </section>
-
-            <section class="flex-col">
-                <div class="ad">
-                </div>
-            </section>
-
-            <section class="flex-col">
-                <p><b>NEWS & INTERVIEWS</b></p>
-                <a href="#" class="blog"><b>6 Great Books hitting shelves this week<b></a>
-                <img src="https://images.gr-assets.com/blogs/1667585027p7/2435.jpg" alt="blog cover">
-            </section>
-
-            <section class="flex-col">
-                <div class="ad">
-                </div>
-            </section>
-
-            <section class="flex-col gap-2">
-                <div class="pages flex-row-center align-start">
-                    <div class="company flex-col gap-0">
-                        <p><b>COMPANY</b></p>
-                        <p class="right-links">About Us</p>
-                        <p class="right-links">Careers</p>
-                        <p class="right-links">Terms</p>
-                        <p class="right-links">Privacy</p>
-                        <p class="right-links">Interest Based Ads</p>
-                        <p class="right-links">Ad Preferences</p>
-                        <p class="right-links">Help</p>
-                    </div>
-                    <div class="work-with-us flex-col gap-0">
-                        <p><b>WORK WITH US</b></p>
-                        <p class="right-links">Authors</p>
-                        <p class="right-links">Advertise</p>
-                        <p class="right-links">Authors & ads blog</p>
-                        <p class="right-links">API</p>
-                    </div>
-                </div>
-                <div class="connect flex-col">
-                    <p><b>CONNECT</b></p>
-                    <div class="social-media flex-row-center space-evenly nav-icons justify-start gap-1">
-                        <i class="fa-2x fa-brands fa-facebook"></i>
-                        <i class="fa-2x fa-brands fa-twitter"></i>
-                        <i class="fa-2x fa-brands fa-instagram"></i>
-                        <i class="fa-2x fa-brands fa-linkedin"></i>
-                    </div>
-                </div>
-                <div class="app-links flex-row-center">
-                    <img src="https://s.gr-assets.com/assets/app/badge-ios-desktop-homepage-6ac7ae16eabce57f6c855361656a7540.svg" alt="appstore">
-                    <img src="https://s.gr-assets.com/assets/app/badge-android-desktop-home-0f517cbae4d56c88a128d27a7bea1118.png" alt="playstore">
-                </div>
-                <a href="#">Mobile Version</a>
-                <small>&#169; 2022 Goodreads, Inc.</small>
-            </section>
-        </aside>
+    <div id="banner">
+        <p><i class="fa-solid fa-trophy"></i><b>&nbsp&nbsp&nbsp&nbsp The Goodreads Choice Awards Opening Round </b> <small>&nbsp&nbsp&nbsp&nbsp Vote for year's best books </small> <i class="fa-solid fa-chevron-right"></i></p>
     </div>
 
+    <div class="body">
+        <nav class="flex-row-center wrap">
+            <p class="title">good<b>Reads 2.0</b></p>
+            <div class="nav-links flex-row-center gap-1">
+                <a class="hover-underline-animation" href="#">Home</a>
+                <a class="hover-underline-animation" href="#">My Books</a>
+                <a class="hover-underline-animation" href="#">Browse</a>
+                <a class="hover-underline-animation" href="#">Community</a>
+            </div>
+            <div class="input flex-row-center">
+                <input type="text" placeholder="Search books">
+                <i class="fa-solid fa-magnifying-glass icon"></i>
+            </div>
+            <div class="nav-icons flex-row-center gap-1">
+                <i class="icon fa-solid fa-bell"></i>
+                <i class="icon fa-solid fa-comments"></i>
+                <i class="icon fa-solid fa-envelope"></i>
+                <i class="icon fa-solid fa-user-group"></i>
+                <img class="profile" src="https://i.pravatar.cc/300" alt="Profile">
+            </div>
+        </nav>
+
+        <div id="Main">
+            <aside class="left flex-col">
+                <section class="flex-col gap-1">
+                    <div class="currently-reading flex-col">
+                        <p><b>CURRENTLY READING</b></p>
+                        <div class="question flex-row-center space-evenly">
+                            <i class="fa-solid fa-book fa-4x icon-large"></i>
+                            <p>What are you reading ?</p>
+                        </div>
+                    </div>
+                    <div class="input flex-row-center">
+                        <input type="text" placeholder="Search books">
+                        <i class="fa-solid fa-magnifying-glass icon"></i>
+                    </div>
+                    <div class="links">
+                        <span>
+                            <a href="#">Recommendations</a>
+                            <span>|</span>
+                            <a href="#">General Update</a>
+                        </span>
+                    </div>
+                </section>
+
+                <section class="flex-col">
+                    <div class="reading-challenge">
+                        <p><b>2022 READING CHALLENGE</b></p>
+                    </div>
+                    <p>Challenge yourself to read more this year!!</p>
+                    <div class="reading-challenge-input flex-row-center space-evenly">
+                        <div class="image">
+                            <i class="fa-solid fa-book-open fa-5x"></i>
+                        </div>
+                        <div class="set-target flex-col">
+                            <p>I want to read</p>
+                            <input type="number" name="target" id="target">
+                            <p>books in 2022</p>
+                            <button>Start Challenge</button>
+                        </div>
+                    </div>
+                    <small>You can change your goal at any time</small>
+                </section>
+
+                <section class="flex-col  gap-1">
+                    <div class="currently-reading flex-col">
+                        <p><b>WANT TO READ</b></p>
+                        <div class="want-to-read flex-row-center space-evenly">
+                            <i class="fa-solid fa-book fa-4x icon-large"></i>
+                            <p>What do you want to read next ?</p>
+                        </div>
+                    </div>
+                    <div class="links">
+                        <span>
+                            <a href="#">Recommendations</a>
+                        </span>
+                    </div>
+                </section>
+
+                <section class="flex-col bookshelves">
+                    <div class=" flex-col">
+                        <p><b>BOOKSHELVES</b></p>
+                    </div>
+                    <div class="links flex-col justify-start">
+                        <a href="#"> 10 - Want to Read</a>
+                        <a href="#"> 02 - Currently Reading</a>
+                        <a href="#"> 38 - Read</a>
+                        <a href="#"> 10 - Want to Read</a>
+                    </div>
+                </section>
+            </aside>
+
+            <main class="timeline flex-col">
+            </main>
+
+            <aside class="right flex-col">
+                <section class="flex-col">
+                    <div class="ad">
+                    </div>
+                </section>
+
+                <section class="flex-col">
+                    <p><b>GOODREADS CHOICE AWARDS</b></p>
+                    <div class="award flex-col">
+                        <img src="https://s.gr-assets.com/assets/award/2022/choice-logo-home-module-medium-d9fe12afd4cbf7143fd89c205a8694e4.png"
+                            alt="poster">
+                        <div class="text flex-col">
+                            <p class="award-title"><b>Decide the Best Books of 2022</b></p>
+                            <button class="vote">Cast your Vote</button>
+                            <p>2,269,420 Votes Cast</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="flex-col">
+                    <div class="recommendations flex-col">
+                        <p><b>RECOMMENDATIONS</b></p>
+                        <p>Because you enjoyed <b>The Oath of the Vayuputras (Shiva Trilogy #3)</b>:</p>
+                        <div class="book flex-row-center space-evenly">
+                            <div class="cover">
+                                <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1643265993l/60222681._SY475_.jpg"
+                                    alt="The Hidden Hindu">
+                            </div>
+                            <div class="details flex-col">
+                                <p><b>The Hidden Hindu</b></p>
+                                <small>by Akshat Gupta</small>
+                                <div class="rating flex-row-center">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-regular fa-star"></i> <small>4.05</small>
+                                </div>
+                                <button> Want to Read</button>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p>About the book: Prithvi, a twenty-one-year-old, is searching for a mysterious middle-aged
+                                aghori (Shiva devotee), Om Shastri, who was traced more than 200 years ago before he was
+                                captured and... <span><a href="#">Continue reading</a></span></p>
+                        </div>
+                        <a href="#">View all books similar to The Oath of the Vayuputras (Shiva Trilogy #3) </a>
+                    </div>
+                </section>
+
+                <section class="flex-col">
+                    <div class="ad">
+                    </div>
+                </section>
+
+                <section class="flex-col">
+                    <p><b>NEWS & INTERVIEWS</b></p>
+                    <a href="#" class="blog"><b>6 Great Books hitting shelves this week<b></a>
+                    <img src="https://images.gr-assets.com/blogs/1667585027p7/2435.jpg" alt="blog cover">
+                </section>
+
+                <section class="flex-col">
+                    <div class="ad">
+                    </div>
+                </section>
+
+                <section class="flex-col gap-2">
+                    <div class="pages flex-row-center align-start">
+                        <div class="company flex-col gap-0">
+                            <p><b>COMPANY</b></p>
+                            <p class="right-links">About Us</p>
+                            <p class="right-links">Careers</p>
+                            <p class="right-links">Terms</p>
+                            <p class="right-links">Privacy</p>
+                            <p class="right-links">Interest Based Ads</p>
+                            <p class="right-links">Ad Preferences</p>
+                            <p class="right-links">Help</p>
+                        </div>
+                        <div class="work-with-us flex-col gap-0">
+                            <p><b>WORK WITH US</b></p>
+                            <p class="right-links">Authors</p>
+                            <p class="right-links">Advertise</p>
+                            <p class="right-links">Authors & ads blog</p>
+                            <p class="right-links">API</p>
+                        </div>
+                    </div>
+                    <div class="connect flex-col">
+                        <p><b>CONNECT</b></p>
+                        <div class="social-media flex-row-center space-evenly nav-icons justify-start gap-1">
+                            <i class="fa-2x fa-brands fa-facebook"></i>
+                            <i class="fa-2x fa-brands fa-twitter"></i>
+                            <i class="fa-2x fa-brands fa-instagram"></i>
+                            <i class="fa-2x fa-brands fa-linkedin"></i>
+                        </div>
+                    </div>
+                    <div class="app-links flex-row-center">
+                        <img src="https://s.gr-assets.com/assets/app/badge-ios-desktop-homepage-6ac7ae16eabce57f6c855361656a7540.svg"
+                            alt="appstore">
+                        <img src="https://s.gr-assets.com/assets/app/badge-android-desktop-home-0f517cbae4d56c88a128d27a7bea1118.png"
+                            alt="playstore">
+                    </div>
+                    <a href="#">Mobile Version</a>
+                    <small>&#169; 2022 Goodreads, Inc.</small>
+                </section>
+            </aside>
+        </div>
+    </div>
 </body>
 
 </html>
