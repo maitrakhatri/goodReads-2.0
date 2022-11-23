@@ -19,13 +19,28 @@ html, body {
     margin: 0rem;
 }
 
+a {
+    text-decoration: none;
+    color: var(--links-green);
+    font-size: small;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p, small {
+    margin: 0rem;
+    padding: 0.25rem;
+}
+
 .body {
     padding: 0;
     margin: 1rem 3rem;
     color: var(--brown);
 }
 
-button, select {
+.button, .select {
     outline: none;
     border: none;
     background-color: var(--green);
@@ -41,7 +56,7 @@ button, select {
 
 .flex-row-center {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -49,6 +64,10 @@ button, select {
     display: flex;
     flex-direction: column;
     gap: .5rem;
+}
+
+.space-between {
+    justify-content: space-between;
 }
 
 .space-evenly {
@@ -89,7 +108,6 @@ nav .nav-icons, nav .input {
 }
 
 .nav-links a {
-    text-decoration: none;
     color: inherit;
 }
 
@@ -97,9 +115,6 @@ nav .nav-icons, nav .input {
     background-color: var(--brown-less-opacity);
     width: 32px;
     height: 32px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-radius: 3rem;
 }
 
@@ -117,7 +132,6 @@ input.input {
 }
 
 .input {
-    /* padding-bottom: 1rem; */
     border-bottom: 2px solid var(--brown);
 }
 
@@ -130,30 +144,6 @@ input.input {
     height: auto;
     border-radius: 3rem;
     cursor: pointer;
-}
-
-.hover-underline-animation {
-    display: inline-block;
-    position: relative;
-    color: var(--brown);
-}
-
-.hover-underline-animation::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: -3px;
-    left: 0;
-    background-color: var(--brown);
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-}
-
-.hover-underline-animation:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
 }
 
 nav #menu {
@@ -173,13 +163,6 @@ nav #menu {
     z-index: 2;
 }
 
-.hamburger-menu-container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .hide {
     display: none;
 }
@@ -189,7 +172,6 @@ nav #menu {
     margin: 3rem 0rem;
     width: 100%;
     display: grid;
-    /* grid-template-columns: 1fr 2fr; */
     gap: 3rem;
 }
 
@@ -209,42 +191,14 @@ section {
     font-size: small;
 }
 
-/* .left p, .right p, .timeline p, .left small, .right small, .timeline small {
-    margin: 0rem;
-    padding: 0.25rem;
-} */
-
-p, small {
-    margin: 0rem;
-    padding: 0.25rem;
-}
-
 .icon-large {
     width: 1rem;
-}
-
-a {
-    text-decoration: none;
-    color: var(--links-green);
-    font-size: small;
-}
-
-.left a:hover, .right a:hover {
-    text-decoration: underline;
 }
 
 .set-target input {
     width: 2.5rem;
     padding: 0.25rem 0rem;
     outline: none;
-}
-
-.set-target {
-    gap: 0rem;
-}
-
-#Main .input {
-    /* padding: 0rem; */
 }
 
 /* --------------------------- RIGHT SIDEBAR ---------------------------- */
@@ -257,10 +211,6 @@ a {
     width: 100%;
     aspect-ratio: 4/3;
     height: auto;
-}
-
-.award {
-    gap: 0rem;
 }
 
 .award img {
@@ -289,7 +239,7 @@ button.vote {
     height: auto;
 }
 
-a.blog {
+nav a, a.blog {
     font-size: large;
 }
 
@@ -307,7 +257,7 @@ a.blog {
     height: 50px;
 }
 
-/* --------------------------- RIGHT SIDEBAR ---------------------------- */
+/* --------------------------- Banner ---------------------------- */
 #banner {
     text-align: center;
     background-color: var(--links-green);
@@ -336,11 +286,6 @@ a.blog {
 .timeline {
     padding: 2rem;
     background-color: var(--bg-light);
-}
-
-.timeline a {
-    text-decoration: none;
-    color: var(--links-green);
 }
 
 .book-card {
@@ -384,7 +329,6 @@ a.blog {
 #footer {
     font-size: small;
     background-color: var(--bg-dark);
-    /* width: 100%; */
     padding: 2rem 1rem;
 }
 
@@ -422,13 +366,8 @@ a.blog {
     }
 
     #Main {
-        /* margin: 3rem 0rem; */
-        /* width: 100%; */
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        /* gap: 5rem; */
-        /* justify-content: center; */
-        /* align-items: stretch; */
     }
 
     #footer {
