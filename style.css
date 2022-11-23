@@ -338,6 +338,10 @@ nav a, a.blog {
     display: flex;
 }
 
+.me {
+    margin-bottom: 1rem;
+}
+
 /* MEDIA QUERIES */
 
 
