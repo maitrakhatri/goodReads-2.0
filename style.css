@@ -17,6 +17,7 @@ html, body {
     font-family: 'Open Sans', sans-serif;
     padding: 0rem;
     margin: 0rem;
+    transition: 250ms linear;
 }
 
 a {
